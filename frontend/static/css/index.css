@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+#titleHeader {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 3.2em;
+  text-align: center;
+}
+
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.8em;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  #weekList {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.2em;
+  }
+
+  a {
+    font-family: 'Shadows Into Light', cursive;
+    background-color: black;
+    color: white;
+    float: left;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  width: 25%;
+  text-align: center;
+}
+p {
+  font-size: 16px;
+}
