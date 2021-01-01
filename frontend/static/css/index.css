@@ -24,10 +24,7 @@ h2 {
     background-color: black;
     color: white;
     float: left;
-  padding-top: auto;
-  padding-bottom: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: auto;
   color: white;
   text-decoration: none;
   font-size: 18px;

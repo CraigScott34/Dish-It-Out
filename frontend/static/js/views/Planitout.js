@@ -26,7 +26,7 @@ async getHtml() {
         <div>
         <button id="submitButton">Submit</button>
         <br><br>
-        <li id="randomResult">result</li>
+        <h3 id="randomResult">result</h3>
         </div>
         </section>
         `;
