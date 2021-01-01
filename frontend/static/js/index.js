@@ -51,9 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
     router();
 })
 
-let output = document.getElementById("randomResult");
+//let output = document.getElementById("randomResult");
 
-//meals
+//ARRAY OF ENTREES AKA ENTARRAY
 let meals = [
 {entree: 'Chicken Spaghetti', link: 'https://www.thecountrycook.net/creamy-cheesy-chicken-spaghetti'}, 
 {entree: 'Beef Strogonoff', link: 'https://vikalinka.com/best-beef-stroganoff'}, 
@@ -62,13 +62,7 @@ let meals = [
 {entree: 'Bacon Avocado Salad', link: 'https://www.savorytooth.com/keto-chicken-salad'}, 
 {entree: 'Verde Foil-Wrapped Chicken', link: 'https://www.chelseasmessyapron.com/foil-pack-creamy-salsa-verde-chicken-rice-veggies/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed:+ChelseasMessyApron+(Chelsea%27s+Messy+Apron)'},
 ];
-     //CREATE HYPERLINK VALUES FOR RESULTS/MEALS ARRAY
-    meals.forEach(function(item) {
-        let entree = entree.textContent = item.entree;
-        let link = link.textContent = item.link;
-        link.href = item.link;
-    });
-        //END HYPERLINK VALUES
+
 //RANDOM GENERATOR
 function getRandomNumber(min, max) {
     let step1 = max - min + 1;
@@ -79,14 +73,81 @@ function getRandomNumber(min, max) {
 }
 //END RANDOM GENERATOR
 
+//FUNCTION TO RUN PER CHECKED ITEM - NEEDS TO BE FIXED
+function isChecked(id) {
+    let decider = document.getElementById(id);
+    if (decider.checked){
+        console.log(id + " is Checked");
+        return true;
+    }
+    return false;
+}
+function whatsChecked() {
+    // let decider = document.getElementById('sunCheck');
+    // if (decider.checked){
+    //     console.log("The Box is Checked");
+    //     let output = document.getElementById("randomResult");
+    // }
+    if(isChecked("sunCheck")){
+        let index = getRandomNumber(0, meals.length-1);
+        //OUTPUT ENTREE AS HYPERLINK
+        let meal = document.getElementById("sunMeal")
+        meal.innerHTML = meals[index].entree;
+        meal.href = meals[index].link;
+    }
+    if(isChecked("monCheck")){
+        let index = getRandomNumber(0, meals.length-1);
+        //OUTPUT ENTREE AS HYPERLINK
+        let meal = document.getElementById("monMeal")
+        meal.innerHTML = meals[index].entree;
+        meal.href = meals[index].link;
+    }
+    if(isChecked("tuesCheck")){
+        let index = getRandomNumber(0, meals.length-1);
+        //OUTPUT ENTREE AS HYPERLINK
+        let meal = document.getElementById("tuesMeal")
+        meal.innerHTML = meals[index].entree;
+        meal.href = meals[index].link;
+    }
+    if(isChecked("wedCheck")){
+        let index = getRandomNumber(0, meals.length-1);
+        //OUTPUT ENTREE AS HYPERLINK
+        let meal = document.getElementById("wedMeal")
+        meal.innerHTML = meals[index].entree;
+        meal.href = meals[index].link;
+    }
+    if(isChecked("thursCheck")){
+        let index = getRandomNumber(0, meals.length-1);
+        //OUTPUT ENTREE AS HYPERLINK
+        let meal = document.getElementById("thursMeal")
+        meal.innerHTML = meals[index].entree;
+        meal.href = meals[index].link;
+    }
+    if(isChecked("friCheck")){
+        let index = getRandomNumber(0, meals.length-1);
+        //OUTPUT ENTREE AS HYPERLINK
+        let meal = document.getElementById("friMeal")
+        meal.innerHTML = meals[index].entree;
+        meal.href = meals[index].link;
+    }
+    if(isChecked("satCheck")){
+        let index = getRandomNumber(0, meals.length-1);
+        //OUTPUT ENTREE AS HYPERLINK
+        let meal = document.getElementById("satMeal")
+        meal.innerHTML = meals[index].entree;
+        meal.href = meals[index].link;
+    }
+}
+
+//LOAD HTML CONTENTS BEFORE OUTPUT
 window.addEventListener('load', (event) => {
     console.log('page is fully loaded');
-    let output = document.getElementById("randomResult");
+
+    // let output = document.getElementById("randomResult");
     let btnRandom = document.getElementById("submitButton");
 console.log("Result:", btnRandom);
 btnRandom.addEventListener("click", function() {
-    let index = getRandomNumber(0, meals.length-1);
-    output.innerHTML = meals[index];
+    whatsChecked();
 })
   });
  
