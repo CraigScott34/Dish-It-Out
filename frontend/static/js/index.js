@@ -16,7 +16,7 @@ const router = async () => {
         { path: "/recipes", view: Recipes },
         { path: "/contact", view: Contact },
     ];
-// Test each route for potential match
+// TEST EACH ROUTE FOR POTENTIAL MATCH
 const potentialMatches = routes.map(route => {
     return {
         route: route,
@@ -35,8 +35,6 @@ if (!match) {
 const view = new match.route.view();
 
 document.querySelector("#app").innerHTML = await view.getHtml();
-
-//console.log(match.route.view());
 };
 
 window.addEventListener("popstate", router);
@@ -51,12 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
     router();
 })
 
-//let output = document.getElementById("randomResult");
-
 //ARRAY OF ENTREES AKA ENTARRAY
 let meals = [
 {entree: 'Chicken Spaghetti', link: 'https://www.thecountrycook.net/creamy-cheesy-chicken-spaghetti'}, 
-{entree: 'Beef Strogonoff', link: 'https://vikalinka.com/best-beef-stroganoff'}, 
+{entree: 'Beef Stroganoff', link: 'https://vikalinka.com/best-beef-stroganoff'}, 
 {entree: 'Chicken Marsala', link: 'https://www.cookingclassy.com/chicken-marsala'}, 
 {entree: 'Cheeseburger Quesadilla', link: 'https://www.thediaryofarealhousewife.com/bacon-cheeseburger-quesadilla'}, 
 {entree: 'Bacon Avocado Salad', link: 'https://www.savorytooth.com/keto-chicken-salad'}, 
@@ -73,7 +69,7 @@ function getRandomNumber(min, max) {
 }
 //END RANDOM GENERATOR
 
-//FUNCTION TO RUN PER CHECKED ITEM - NEEDS TO BE FIXED
+//FUNCTION TO RUN PER CHECKED ITEM
 function isChecked(id) {
     let decider = document.getElementById(id);
     if (decider.checked){
@@ -83,11 +79,6 @@ function isChecked(id) {
     return false;
 }
 function whatsChecked() {
-    // let decider = document.getElementById('sunCheck');
-    // if (decider.checked){
-    //     console.log("The Box is Checked");
-    //     let output = document.getElementById("randomResult");
-    // }
     if(isChecked("sunCheck")){
         let index = getRandomNumber(0, meals.length-1);
         //OUTPUT ENTREE AS HYPERLINK
@@ -143,7 +134,6 @@ function whatsChecked() {
 window.addEventListener('load', (event) => {
     console.log('page is fully loaded');
 
-    // let output = document.getElementById("randomResult");
     let btnRandom = document.getElementById("submitButton");
 console.log("Result:", btnRandom);
 btnRandom.addEventListener("click", function() {
