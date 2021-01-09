@@ -44,6 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target.matches("[data-link]")) {
             e.preventDefault();
             navigateTo(e.target.href);
+            console.log("testing...")
+        }
+        if (e.target.matches("[data-link='test']")){
+            e.preventDefault();
+            navigateTo(e.target.href);
+            let btnRandom = document.getElementById("submitButton");
+            console.log("Result:", btnRandom);
+            btnRandom.addEventListener("click", function(){
+                whatsChecked();
+                console.log("testing222...")
+            })
         }
     })
     router();
@@ -57,7 +68,14 @@ let meals = [
 {entree: 'Cheeseburger Quesadilla', link: 'https://www.thediaryofarealhousewife.com/bacon-cheeseburger-quesadilla'}, 
 {entree: 'Bacon Avocado Salad', link: 'https://www.savorytooth.com/keto-chicken-salad'}, 
 {entree: 'Verde Foil-Wrapped Chicken', link: 'https://www.chelseasmessyapron.com/foil-pack-creamy-salsa-verde-chicken-rice-veggies/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed:+ChelseasMessyApron+(Chelsea%27s+Messy+Apron)'},
+{entree: 'Stuffed Peppers', link: 'https://www.foodiecrush.com/stuffed-bell-peppers-recipe'}, 
+{entree: 'Chicago Dogs', link: 'https://heygrillhey.com/chicago-hot-dog'}, 
+{entree: 'Beef Enchiladas', link: 'https://www.yellowblissroad.com/ground-beef-enchiladas/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=1008399684_45712764_267081'}, 
 ];
+
+//LOAD HTML CONTENTS BEFORE OUTPUT
+window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
 
 //RANDOM GENERATOR
 function getRandomNumber(min, max) {
@@ -130,14 +148,10 @@ function whatsChecked() {
     }
 }
 
-//LOAD HTML CONTENTS BEFORE OUTPUT
-window.addEventListener('load', (event) => {
-    console.log('page is fully loaded');
-
-    let btnRandom = document.getElementById("submitButton");
-console.log("Result:", btnRandom);
-btnRandom.addEventListener("click", function() {
-    whatsChecked();
-})
+//     let btnRandom = document.getElementById("submitButton");
+// console.log("Result:", btnRandom);
+// btnRandom.addEventListener("click", function() {
+//     whatsChecked();
+// })
   });
  

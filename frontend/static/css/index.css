@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
 
+
+/* MAIN STYLES */
 body {
-  background-color: grey;
+  background-color:rgb(221, 226, 223);
+  text-decoration: none;
 }
 
 #titleHeader {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 3.2em;
+  stroke-width:2px;
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 90px;
   text-align: center;
-  background-color: grey;
+  background-color: rgb(81, 233, 139);
   text-decoration: none;
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: black;
+  padding: 20px;
+  margin: auto;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
 }
 
 h1 {
@@ -17,15 +33,43 @@ h1 {
 }
 
 h2 {
-    font-family: 'Shadows Into Light', cursive;
+  font-family: 'Rock Salt', cursive;
     font-size: 2.8em;
     text-align: center;
     padding-top: 80px;
   }
 
+  /* HOME STYLES */
+  #catch{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+  #about{
+    padding: none;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+  }
+/* PLAN IT OUT STYLES */
+#steps{
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+#note {
+  font-size: 16px;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+}
+
   #weekList {
     font-family: 'Shadows Into Light', cursive;
     font-size: 1.2em;
+    text-align: center;
   }
 
   #navbar .nav__link {
@@ -46,43 +90,120 @@ h2 {
 
 p {
   font-size: 16px;
+  font-family: 'Rock Salt', cursive;
 }
 
 #sunMeal {
- color: red;
+ color: rgb(81, 233, 139);
  float:inline-end;
+ text-decoration: none;
 }
 
 #monMeal {
-  color: red;
+  color: rgb(81, 233, 139);
   text-align: center;
+  text-decoration: none;
   }
 
   #tuesMeal {
-    color: red;
+    color: rgb(81, 233, 139);
     text-align: center;
+    text-decoration: none;
     }
 
   #wedMeal {
-    color: red;
+    color: rgb(81, 233, 139);
     text-align: center;
+    text-decoration: none;
     }
 
   #thursMeal {
-    color: red;
+    color: rgb(81, 233, 139);
     text-align: center;
+    text-decoration: none;
     }
 
   #friMeal {
-    color: red;
+    color: rgb(81, 233, 139);
     text-align: center;
+    text-decoration: none;
     }
 
   #satMeal {
-    color: red;
-      text-align: center;
+    color: rgb(81, 233, 139);
+    text-align: center;
+    text-decoration: none;
     }
+  #subButton{
+    text-align: center;
+  } 
+
+  #submitButton {
+    text-align: center;
+    background-color: rgb(81, 233, 139);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 #menuDay {
 text-align: center;
+}
+/* RECIPES */
+#recipeNote{
+  font-size: 16px;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+}
+
+#recipeContainer{
+  text-align: center;
+}
+
+#recipeLink{
+  font-size: 16px;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#recipeLink:hover{
+  background-color: rgb(81, 233, 139);
+  color: white;
+}
+
+/* CONTACT STYLES */
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* SUBMIT BUTTON */
+input[type=submit] {
+  background-color: rgb(81, 233, 139);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* SUBMIT HOVER EFFECT */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }

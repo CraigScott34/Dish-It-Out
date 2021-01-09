@@ -10,8 +10,15 @@ async getHtml() {
     <section id="Plan-it-out">
         <h2 id="planItOut">Plan it out</h2>
         <p>
-        It's simple, really.  Start by checking which days of the week you need to plan for.  Then let us work our magic.
-        Don't like what we picked for Thursday?  No problem, just click "try again."  We won't be offended.
+        <ul id="steps">
+        <li>Step 1: Choose the days of the week you need a recipe for.</li>
+        <li>Step 2: Click Submit.</li>
+        <li>Step 3: Click the result to be taken to the recipe.</li>
+        </ul>
+        </p>
+        <br>
+        <p id="note">
+        <u>Note:</u> If you don't like the entree selected on a day, leave it checked.  Uncheck all other days and click submit.  All checked recipes will be generated again!
         </p>
             <div id="weekList">
             <br>
@@ -59,7 +66,7 @@ async getHtml() {
             </div>
             </div>
         <br>
-        <div>
+        <div id="subButton">
         <br>
         <button id="submitButton">Submit</button>
         </div>

@@ -8,20 +8,32 @@ export default class extends AbstractView {
 async getHtml() {
     return `
         <h2>Recipes</h2>
-        <p>
+        <p id="recipeNote">
             This is a list of all the recipes we have in the books.  Maybe you want to control your own destiny.  Go ahead.
             </p>
-           
+            <br>
+            <br>
+            <div id="recipeContainer">
+    <a id="recipeLink" href='https://www.thecountrycook.net/creamy-cheesy-chicken-spaghetti' target ="_blank">Chicken Spaghetti</a>
+    <br><br>
+    <a id="recipeLink" href='https://vikalinka.com/best-beef-stroganoff' target ="_blank">Beef Stroganoff</a>
+    <br><br>
+    <a id="recipeLink" href='https://www.cookingclassy.com/chicken-marsala' target ="_blank">Chicken Marsala</a>
+    <br><br>
+    <a id="recipeLink" href='https://www.thediaryofarealhousewife.com/bacon-cheeseburger-quesadilla' target ="_blank">Cheeseburger Quesadilla</a>
+    <br><br>
+    <a id="recipeLink" href='https://www.savorytooth.com/keto-chicken-salad' target ="_blank">Bacon Avocado Salad</a>
+    <br><br>
+    <a id="recipeLink" href='https://www.chelseasmessyapron.com/foil-pack-creamy-salsa-verde-chicken-rice-veggies/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed:+ChelseasMessyApron+(Chelsea%27s+Messy+Apron)' target ="_blank">Verde Foil-Wrapped Chicken</a>
+    <br><br>
+    <a id="recipeLink" href='https://www.foodiecrush.com/stuffed-bell-peppers-recipe' target ="_blank">Stuffed Peppers</a>
+    <br><br>
+    <a id="recipeLink" href='https://heygrillhey.com/chicago-hot-dog' target ="_blank">Chicago Dogs</a>
+    <br><br>
+    <a id="recipeLink" href='https://www.yellowblissroad.com/ground-beef-enchiladas/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=1008399684_45712764_267081' target ="_blank">Beef Enchiladas</a>
+    <br><br>
+
+    </div>
         `;
 }
 }
-pictures: [
-    {url: "https://s23527.pcdn.co/wp-content/uploads/2018/11/food-3409682_1920-745x497.jpg.optimal.jpg",
-    title:"Food Picture"
-},
-{
-    url:
-      "https://images.unsplash.com/photo-1505628346881-b72b27e84530?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    title: "sunglass doggo"
-  },
-]
