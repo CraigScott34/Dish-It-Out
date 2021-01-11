@@ -23,6 +23,26 @@ body {
   margin: auto;
 }
 
+#navbar .nav__link {
+  font-family: 'Shadows Into Light', cursive;
+  background-color: black;
+  color: white;
+  float: left;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  width: 25%;
+  text-align: center;
+}
+
+#navbar .nav__link:hover {
+  color:rgb(81, 233, 139)
+}
+
 ul {
   text-align: center;
   list-style-type: none;
@@ -66,27 +86,23 @@ h2 {
   text-align: center;
 }
 
-  #weekList {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1.2em;
-    text-align: center;
-  }
+#weekList {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.2em;
+  text-align: left;
+  width: 50%;
+  float: left;
+}
 
-  #navbar .nav__link {
-    font-family: 'Shadows Into Light', cursive;
-    background-color: black;
-    color: white;
-    float: left;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding: auto;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    width: 25%;
-    text-align: center;
-  }
+#weekChk {
+  position: relative;
+  float: right;
+  margin-right: 2em;
+}
+
+.chkContainer {
+  margin-top: 1.5em;
+}
 
 p {
   font-size: 16px;
@@ -94,9 +110,9 @@ p {
 }
 
 #sunMeal {
- color: rgb(81, 233, 139);
- float:inline-end;
- text-decoration: none;
+  color: rgb(81, 233, 139);
+  text-align: center;
+  text-decoration: none;
 }
 
 #monMeal {
@@ -134,9 +150,9 @@ p {
     text-align: center;
     text-decoration: none;
     }
-  #subButton{
-    text-align: center;
-  } 
+  /* #subButton{
+    text-align: left;
+  }  */
 
   #submitButton {
     text-align: center;
@@ -146,11 +162,36 @@ p {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    float: right;
+    width: 100%;
+    margin-top: 1em;
   }
 
-#menuDay {
-text-align: center;
-}
+  #submitButton:hover {
+    background-color: #45a049;
+  } 
+  #menuContainer {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.2em;
+    width: 50%;
+    float: right;
+    text-align: left;
+    display: inline-block;
+  }
+
+  #menuTest a {
+    display:inline-block;
+  }
+
+  #menuTest a:after {
+    clear: both;
+  }
+
+  .menuDay {
+    display: inline-block;
+    margin-top: 1.5em;
+  }
+
 /* RECIPES */
 #recipeNote{
   font-size: 16px;

@@ -2,13 +2,10 @@ import Home from "./views/Home.js";
 import Planitout from "./views/Planitout.js";
 import Recipes from "./views/Recipes.js";
 import Contact from "./views/Contact.js";
-
-
 const navigateTo = url => {
     history.pushState(null, null, url);
     router();
 }
-
 const router = async () => {
     const routes = [
         { path: "/", view: Home },
@@ -16,6 +13,7 @@ const router = async () => {
         { path: "/recipes", view: Recipes },
         { path: "/contact", view: Contact },
     ];
+
 // TEST EACH ROUTE FOR POTENTIAL MATCH
 const potentialMatches = routes.map(route => {
     return {
@@ -23,9 +21,7 @@ const potentialMatches = routes.map(route => {
         isMatch: location.pathname === route.path
     }
 })
-
 let match = potentialMatches.find(potentialMatch => potentialMatch.isMatch);
-
 if (!match) {
     match = {
         route: routes[0],
@@ -33,30 +29,26 @@ if (!match) {
     };
 }
 const view = new match.route.view();
-
 document.querySelector("#app").innerHTML = await view.getHtml();
 };
-
 window.addEventListener("popstate", router);
-
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", e => {
         if (e.target.matches("[data-link]")) {
             e.preventDefault();
             navigateTo(e.target.href);
-            console.log("testing...")
         }
-        if (e.target.matches("[data-link='test']")){
-            e.preventDefault();
-            navigateTo(e.target.href);
+        if (e.target.matches("[data-link='pitOut']")){
+            setTimeout(() => {  
             let btnRandom = document.getElementById("submitButton");
-            console.log("Result:", btnRandom);
-            btnRandom.addEventListener("click", function(){
+            console.log(btnRandom)
+            btnRandom.addEventListener("click",  function(){
+                e.preventDefault();
                 whatsChecked();
-                console.log("testing222...")
             })
-        }
-    })
+            },1000);            
+    }
+    })    
     router();
 })
 
@@ -73,16 +65,11 @@ let meals = [
 {entree: 'Beef Enchiladas', link: 'https://www.yellowblissroad.com/ground-beef-enchiladas/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=1008399684_45712764_267081'}, 
 ];
 
-//LOAD HTML CONTENTS BEFORE OUTPUT
-window.addEventListener('load', (event) => {
-    console.log('page is fully loaded');
-
 //RANDOM GENERATOR
 function getRandomNumber(min, max) {
     let step1 = max - min + 1;
     let step2 = Math.random() * step1;
     let result = Math.floor(step2) + min;
-
     return result;
 }
 //END RANDOM GENERATOR
@@ -147,11 +134,3 @@ function whatsChecked() {
         meal.href = meals[index].link;
     }
 }
-
-//     let btnRandom = document.getElementById("submitButton");
-// console.log("Result:", btnRandom);
-// btnRandom.addEventListener("click", function() {
-//     whatsChecked();
-// })
-  });
- 
