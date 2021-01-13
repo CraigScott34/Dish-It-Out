@@ -12,7 +12,7 @@ async getHtml() {
         <p id="contactNote">
             Thanks for dropping by!  Now it's your turn to dish it out.  Use the form below to contact us.</p>
             <div class="container">
-  <form action="action_page.php">
+  <form action="https://formspree.io/f/maylaavz" method="POST">
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="First">

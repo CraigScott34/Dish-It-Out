@@ -62,7 +62,16 @@ let meals = [
 {entree: 'Verde Foil-Wrapped Chicken', link: 'https://www.chelseasmessyapron.com/foil-pack-creamy-salsa-verde-chicken-rice-veggies/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed:+ChelseasMessyApron+(Chelsea%27s+Messy+Apron)'},
 {entree: 'Stuffed Peppers', link: 'https://www.foodiecrush.com/stuffed-bell-peppers-recipe'}, 
 {entree: 'Chicago Dogs', link: 'https://heygrillhey.com/chicago-hot-dog'}, 
-{entree: 'Beef Enchiladas', link: 'https://www.yellowblissroad.com/ground-beef-enchiladas/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=1008399684_45712764_267081'}, 
+{entree: 'Beef Enchiladas', link: 'https://www.yellowblissroad.com/ground-beef-enchiladas/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=1008399684_45712764_267081'},
+{entree: 'Cajun Shrimp Pasta', link: 'https://selfproclaimedfoodie.com/cajun-shrimp-pasta/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_tribes&utm_content=tribes&utm_term=891996326_34955876_158220'}, 
+{entree: 'Beer Braised Brats', link: 'https://www.craftbeering.com/beer-brats-recipe'}, 
+{entree: 'Caprese Chicken', link: 'https://thenovicechefblog.com/caprese-chicken'}, 
+{entree: 'Chili', link: 'https://spaceshipsandlaserbeams.com/old-fashioned-chili-recipe/?utm_medium=social&utm_source=pinterest&utm_campaign=tailwind_smartloop&utm_content=smartloop&utm_term=42415490'}, 
+{entree: 'Shredded Beef Burritos', link: 'https://thatsdeelicious.com/mexican-shredded-beef'},
+{entree: 'Blackened Salmon', link: 'https://www.eatwell101.com/blackened-salmon-recipe'},
+{entree: 'Tortellini', link: 'https://juliasalbum.com/creamy-mozzarella-sausage-spinach-tomato-tortellini'},
+{entree: 'Kielbasa Pasta', link: 'https://dinnersdishesanddesserts.com/one-pan-cheesy-sausage-pasta/?utm_content=buffera2f68&utm_medium=social&utm_source=pinterest.com&utm_campaign=buffer'},
+{entree: 'Shrimp Fajitas', link: 'https://www.number-2-pencil.com/one-sheet-pan-shrimp-fajitas'},
 ];
 
 //RANDOM GENERATOR
@@ -90,6 +99,7 @@ function whatsChecked() {
         let meal = document.getElementById("sunMeal")
         meal.innerHTML = meals[index].entree;
         meal.href = meals[index].link;
+        meal.setAttribute("target","_blank");
     }
     if(isChecked("monCheck")){
         let index = getRandomNumber(0, meals.length-1);
@@ -97,6 +107,7 @@ function whatsChecked() {
         let meal = document.getElementById("monMeal")
         meal.innerHTML = meals[index].entree;
         meal.href = meals[index].link;
+        meal.setAttribute("target","_blank");
     }
     if(isChecked("tuesCheck")){
         let index = getRandomNumber(0, meals.length-1);
@@ -104,6 +115,7 @@ function whatsChecked() {
         let meal = document.getElementById("tuesMeal")
         meal.innerHTML = meals[index].entree;
         meal.href = meals[index].link;
+        meal.setAttribute("target","_blank");
     }
     if(isChecked("wedCheck")){
         let index = getRandomNumber(0, meals.length-1);
@@ -111,6 +123,7 @@ function whatsChecked() {
         let meal = document.getElementById("wedMeal")
         meal.innerHTML = meals[index].entree;
         meal.href = meals[index].link;
+        meal.setAttribute("target","_blank");
     }
     if(isChecked("thursCheck")){
         let index = getRandomNumber(0, meals.length-1);
@@ -118,6 +131,7 @@ function whatsChecked() {
         let meal = document.getElementById("thursMeal")
         meal.innerHTML = meals[index].entree;
         meal.href = meals[index].link;
+        meal.setAttribute("target","_blank");
     }
     if(isChecked("friCheck")){
         let index = getRandomNumber(0, meals.length-1);
@@ -125,6 +139,7 @@ function whatsChecked() {
         let meal = document.getElementById("friMeal")
         meal.innerHTML = meals[index].entree;
         meal.href = meals[index].link;
+        meal.setAttribute("target","_blank");
     }
     if(isChecked("satCheck")){
         let index = getRandomNumber(0, meals.length-1);
@@ -132,5 +147,6 @@ function whatsChecked() {
         let meal = document.getElementById("satMeal")
         meal.innerHTML = meals[index].entree;
         meal.href = meals[index].link;
+        meal.setAttribute("target","_blank");
     }
 }

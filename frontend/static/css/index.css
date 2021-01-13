@@ -40,7 +40,7 @@ body {
 }
 
 #navbar .nav__link:hover {
-  color:rgb(81, 233, 139)
+  color:rgb(81, 233, 139);
 }
 
 ul {
@@ -59,6 +59,12 @@ h2 {
     padding-top: 80px;
   }
 
+footer {
+  padding-top: 3em;
+  text-align: center;
+  color: #505050;
+}
+
   /* HOME STYLES */
   #catch{
     text-align: center;
@@ -73,11 +79,23 @@ h2 {
     font-family: 'Rock Salt', cursive;
     text-align: center;
   }
+
 /* PLAN IT OUT STYLES */
+#planSteps {
+  display: inline-block;
+}
+
+#centerSteps {
+  text-align: center;
+}
+
 #steps{
   font-family: 'Shadows Into Light', cursive;
   font-size: 40px;
-  text-align: center;
+  display: block;
+  text-align: left;
+  margin-left: auto;
+
 }
 
 #note {
@@ -109,50 +127,15 @@ p {
   font-family: 'Rock Salt', cursive;
 }
 
-#sunMeal {
+.menuLink{
   color: rgb(81, 233, 139);
   text-align: center;
   text-decoration: none;
 }
 
-#monMeal {
-  color: rgb(81, 233, 139);
-  text-align: center;
-  text-decoration: none;
-  }
-
-  #tuesMeal {
-    color: rgb(81, 233, 139);
-    text-align: center;
-    text-decoration: none;
-    }
-
-  #wedMeal {
-    color: rgb(81, 233, 139);
-    text-align: center;
-    text-decoration: none;
-    }
-
-  #thursMeal {
-    color: rgb(81, 233, 139);
-    text-align: center;
-    text-decoration: none;
-    }
-
-  #friMeal {
-    color: rgb(81, 233, 139);
-    text-align: center;
-    text-decoration: none;
-    }
-
-  #satMeal {
-    color: rgb(81, 233, 139);
-    text-align: center;
-    text-decoration: none;
-    }
-  /* #subButton{
-    text-align: left;
-  }  */
+.menuLink:hover{
+  color: #45a049;
+}
 
   #submitButton {
     text-align: center;
@@ -179,14 +162,6 @@ p {
     display: inline-block;
   }
 
-  #menuTest a {
-    display:inline-block;
-  }
-
-  #menuTest a:after {
-    clear: both;
-  }
-
   .menuDay {
     display: inline-block;
     margin-top: 1.5em;
@@ -203,7 +178,7 @@ p {
   text-align: center;
 }
 
-#recipeLink{
+.recipeLink{
   font-size: 16px;
   font-family: 'Rock Salt', cursive;
   text-align: center;
@@ -211,7 +186,7 @@ p {
   color: black;
 }
 
-#recipeLink:hover{
+.recipeLink:hover{
   background-color: rgb(81, 233, 139);
   color: white;
 }
