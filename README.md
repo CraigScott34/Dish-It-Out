@@ -1,6 +1,6 @@
 # Dish-It-Out
 
-This is my capstone project I created during my 12 week Savvy Coders bootcamp.  This capstone project is a Meal Planning application that is broken into phases.  
+This is my capstone project I created during my 12 week Savvy Coders bootcamp.  This capstone project is a Meal Planning application that is broken into phases.  Currently, this project is on the "slow burner" in order for me to utilize my Udemy course and continue learning JavaScript's many functions and algorithms.   
 
 The current state of the application is Phase 1.  This was all I could knock out while attending JavaScript bootcamp, working a full time job, and raising a family during Covid-19.  
 
@@ -13,5 +13,7 @@ Phase 4 will autopopulate a shopping list based on the recipes the meals call fo
 Phase 5 will start carrying weight to the meals that are being planned.  That is, if "Caprese Chicken" was selected last week, it has less of a chance to be randomly generated again for the current week.
 
 *Please Note: the application currently runs on local host.  Use "node server.js" in terminal.
+
+
 
 Thank you for your interest in my application.
