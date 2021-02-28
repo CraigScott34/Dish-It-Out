@@ -72,6 +72,7 @@ let meals = [
 {entree: 'Tortellini', link: 'https://juliasalbum.com/creamy-mozzarella-sausage-spinach-tomato-tortellini'},
 {entree: 'Kielbasa Pasta', link: 'https://dinnersdishesanddesserts.com/one-pan-cheesy-sausage-pasta/?utm_content=buffera2f68&utm_medium=social&utm_source=pinterest.com&utm_campaign=buffer'},
 {entree: 'Shrimp Fajitas', link: 'https://www.number-2-pencil.com/one-sheet-pan-shrimp-fajitas'},
+{entree: 'Parmesan Crusted Tilapia', link: 'https://www.hoteatsandcoolreads.com/2011/10/whats-for-dinner-parmesan-crusted.html'},
 ];
 
 //RANDOM GENERATOR

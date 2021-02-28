@@ -50,7 +50,8 @@ async getHtml() {
     <br><br>
     <a class="recipeLink" href='https://www.number-2-pencil.com/one-sheet-pan-shrimp-fajitas' target ="_blank">Shrimp Fajitas</a>
     <br><br>
-
+    <a class="recipeLink" href='https://www.hoteatsandcoolreads.com/2011/10/whats-for-dinner-parmesan-crusted.html' target ="_blank">Parmesan Crusted Tilapia</a>
+    <br><br>
     </div>
         `;
 }
