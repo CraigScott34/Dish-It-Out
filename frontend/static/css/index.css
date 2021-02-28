@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 
 /* MAIN STYLES */
 body {
-  background-color:rgb(221, 226, 223);
+  background-color: rgb(221, 226, 223);
   text-decoration: none;
 }
 
 #titleHeader {
-  stroke-width:2px;
+  stroke-width: 2px;
   color: white;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   font-size: 90px;
   text-align: center;
   background-color: rgb(81, 233, 139);
@@ -24,7 +23,7 @@ body {
 }
 
 #navbar .nav__link {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   background-color: black;
   color: white;
   float: left;
@@ -40,7 +39,7 @@ body {
 }
 
 #navbar .nav__link:hover {
-  color:rgb(81, 233, 139);
+  color: rgb(81, 233, 139);
 }
 
 ul {
@@ -53,11 +52,11 @@ h1 {
 }
 
 h2 {
-  font-family: 'Rock Salt', cursive;
-    font-size: 2.8em;
-    text-align: center;
-    padding-top: 80px;
-  }
+  font-family: "Rock Salt", cursive;
+  font-size: 2.8em;
+  text-align: center;
+  padding-top: 80px;
+}
 
 footer {
   padding-top: 3em;
@@ -65,20 +64,20 @@ footer {
   color: #505050;
 }
 
-  /* HOME STYLES */
-  #catch{
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Shadows Into Light', cursive;
-  }
+/* HOME STYLES */
+#catch {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Shadows Into Light", cursive;
+}
 
-  #about{
-    padding: none;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-family: 'Rock Salt', cursive;
-    text-align: center;
-  }
+#about {
+  padding: none;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: "Rock Salt", cursive;
+  text-align: center;
+}
 
 /* PLAN IT OUT STYLES */
 #planSteps {
@@ -89,23 +88,22 @@ footer {
   text-align: center;
 }
 
-#steps{
-  font-family: 'Shadows Into Light', cursive;
+#steps {
+  font-family: "Shadows Into Light", cursive;
   font-size: 40px;
   display: block;
   text-align: left;
   margin-left: auto;
-
 }
 
 #note {
   font-size: 16px;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   text-align: center;
 }
 
 #weekList {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: "Shadows Into Light", cursive;
   font-size: 1.2em;
   text-align: left;
   width: 50%;
@@ -124,87 +122,89 @@ footer {
 
 p {
   font-size: 16px;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
 }
 
-.menuLink{
+.menuLink {
   color: rgb(81, 233, 139);
   text-align: center;
   text-decoration: none;
 }
 
-.menuLink:hover{
+.menuLink:hover {
   color: #45a049;
 }
 
-  #submitButton {
-    text-align: center;
-    background-color: rgb(81, 233, 139);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    width: 100%;
-    margin-top: 1em;
-  }
+#submitButton {
+  text-align: center;
+  background-color: rgb(81, 233, 139);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+  margin-top: 1em;
+}
 
-  #submitButton:hover {
-    background-color: #45a049;
-  } 
-  #menuContainer {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 1.2em;
-    width: 50%;
-    float: right;
-    text-align: left;
-    display: inline-block;
-  }
+#submitButton:hover {
+  background-color: #45a049;
+}
+#menuContainer {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.2em;
+  width: 50%;
+  float: right;
+  text-align: left;
+  display: inline-block;
+}
 
-  .menuDay {
-    display: inline-block;
-    margin-top: 1.5em;
-  }
+.menuDay {
+  display: inline-block;
+  margin-top: 1.5em;
+}
 
 /* RECIPES */
-#recipeNote{
+#recipeNote {
   font-size: 16px;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   text-align: center;
 }
 
-#recipeContainer{
+#recipeContainer {
   text-align: center;
 }
 
-.recipeLink{
+.recipeLink {
   font-size: 16px;
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   text-align: center;
   text-decoration: none;
   color: black;
 }
 
-.recipeLink:hover{
+.recipeLink:hover {
   background-color: rgb(81, 233, 139);
   color: white;
 }
 
 /* CONTACT STYLES */
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px;  
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 /* SUBMIT BUTTON */
-input[type=submit] {
+input[type="submit"] {
   background-color: rgb(81, 233, 139);
   color: white;
   padding: 12px 20px;
@@ -214,7 +214,7 @@ input[type=submit] {
 }
 
 /* SUBMIT HOVER EFFECT */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
